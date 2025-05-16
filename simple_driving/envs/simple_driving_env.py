@@ -9,6 +9,7 @@ from simple_driving.resources.goal import Goal
 import matplotlib.pyplot as plt
 import time
 
+
 RENDER_HEIGHT = 720
 RENDER_WIDTH = 960
 
@@ -31,6 +32,8 @@ class SimpleDrivingEnv(gym.Env):
           self._p = bc.BulletClient(connection_mode=p.GUI)
         else:
           self._p = bc.BulletClient()
+
+        
 
         self.reached_goal = False
         self._timeStep = 0.01
