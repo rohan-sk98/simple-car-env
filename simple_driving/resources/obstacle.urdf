@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<robot name="simple_obstacle">
+  <link name="base_link">
+    <contact>
+      <lateral_friction value="1.0"/>
+      </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.5"/> <mass value="100"/> <inertia ixx="16.67" ixy="0" ixz="0" iyy="16.67" iyz="0" izz="16.67"/> </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0.5"/> <geometry> <box size="1 1 1"/> </geometry>
+      <material name="red_obstacle_material"> <color rgba="0.8 0.1 0.1 1"/> </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.5"/> <geometry> <box size="1 1 1"/> </geometry>
+    </collision>
+  </link>
+</robot>
